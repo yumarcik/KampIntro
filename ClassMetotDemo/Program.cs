@@ -21,14 +21,19 @@ namespace ClassMetotDemo
             musteri3.Id = "EM";
             musteri3.Yas = 19;
 
+            Musteri musteri4 = new Musteri();
+            musteri4.AdSoyad = "sf sfd";
+            
+
             MusteriManager manager = new MusteriManager(3);
             manager.Ekle(musteri1);
             manager.Ekle(musteri2);
             manager.Ekle(musteri3);
+            manager.Ekle(musteri4);
+            manager.Cikar(musteri3);
+            manager.Ekle(musteri4);
             manager.Listele();
-            manager.Cikar(musteri2);
-            manager.Listele();
-           
+            
             
         }
     }
